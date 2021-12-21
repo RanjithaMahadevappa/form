@@ -1,0 +1,93 @@
+require_once() 
+
+The require_once keyword is used to embed PHP code from another file. 
+If the file is not found, a fatal error is thrown and the program stops.
+
+Function
+mysqli_query() 
+
+The mysqli_query() function accepts a string value representing a query as one of the parameters and, 
+executes/performs the given query on the database.
+
+Syntax
+mysqli_query($con, query)
+
+Function
+mysqli_num_rows() 
+
+The mysqli_num_rows() function is an inbuilt function in PHP 
+which is used to return the number of rows present in the result set. 
+It is generally used to check if data is present in the database or not. 
+To use this function, it is mandatory to first set up the connection with the MySQL database.
+
+Syntax:
+
+mysqli_num_rows ( $result );
+
+Function
+mysqli_fetch_array() 
+
+The mysqli_fetch_array() function is used to fetch rows from the database and store them as an array. 
+The array can be fetched as an associative array, as a numeric array or both.
+
+Associative arrays are the arrays where the indexes are the names of the individual columns of the table.
+
+Syntax
+mysqli_fetch_array($result, [$type]);
+
+Function
+isset() 
+The isset() function is an inbuilt function in PHP 
+which checks whether a variable is set and is not NULL. 
+
+Function
+empty()
+
+The empty() function checks whether a variable is empty or not. 
+This function returns false if the variable exists and is not empty, otherwise it returns true.
+
+$_SERVER
+$_SERVER is an array containing information such as headers, paths, and script locations. 
+The entries in this array are created by the web server.
+
+mysqli_prepare
+The mysqli_prepare() function prepares an SQL statement for execution, 
+you can use parameter markers ("?") in this query, specify values for them, and execute it later.
+
+Syntax
+mysqli_prepare($con, $str);
+
+mysqli_stmt_bind_param
+Definition and Usage
+The mysqli_stmt_bind_param() function is used to bind variables to the 
+parameter markers of a prepared statement.
+
+Syntax
+mysqli_stmt_bind_param($stmt, $types, $var1, $var2...);
+
+mysqli_stmt_execute
+The mysqli_stmt_execute() function accepts a prepared statement object 
+(created using the prepare() function) as a parameter, and executes it.
+
+When invoked all the parameter markers will be replaced with the bounded data. 
+After this function if you invoke mysqli_stmt_affected_rows() function 
+(in case of UPDATE, DELETE, INSERT queries) you will get the number of rows affected. 
+In the same way if you invoke the mysqli_stmt_fetch() function 
+(in-case of SELECT) a result set
+ is returned.
+
+Syntax
+mysqli_stmt_execute($stmt);
+
+header()
+Redirect page.
+It is used to redirect a from one web page to another web page in PHP.
+
+Example:
+header('Location:give your url here');
+
+
+font awasome
+
+https://fontawesome.com/
+
